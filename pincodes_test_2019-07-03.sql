@@ -1,0 +1,57 @@
+# ************************************************************
+# Sequel Pro SQL dump
+# Version 4541
+#
+# http://www.sequelpro.com/
+# https://github.com/sequelpro/sequelpro
+#
+# Host: 127.0.0.1 (MySQL 5.7.26)
+# Database: pincodes_test
+# Generation Time: 2019-07-03 12:07:39 +0000
+# ************************************************************
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+# Dump of table pincodes
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `pincodes`;
+
+CREATE TABLE `pincodes` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `pincode` text,
+  `serial_no` varchar(200) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `pincodes` WRITE;
+/*!40000 ALTER TABLE `pincodes` DISABLE KEYS */;
+
+INSERT INTO `pincodes` (`id`, `pincode`, `serial_no`)
+VALUES
+	(143,'eMwbLRI/D9yhg4kPalKziNS9QMHmGvUETY6cUwX+oyeIkGe1WyQ52CV1SQw1efzi+uzXEFm3IIhfzSuBsPhQJRbnsXhr2hMbf8W2/M+IxHBDKI0aT8C7aPuKhM/rWr7ryiNGPkXYconfKkEpE/bl6yXuDuVqTFMyYHxLHfy+7xTSMpnekiA304mZ3TkBN+PeoHpgoJNLBc5J/LgMD2qVjDsLoIDYCHnayoHh5krfF3UQGebkdYY58Y8VY0bRc+Qiiv8x2voTP/G6ZWMwvNBghsHQABvwVYzWLIMH5QO3qsNdZVqFTBWdbKOMxybBV88zyGTXtHilK7/g4ghty8FeVg==','111'),
+	(144,'sLA9hO7EE1PGm+PLwN0lLFaGRThUefc+8jvQHjSsYUIHAMpKWkVbdB5vgO9+RvL31p4LlqpUyIf9PdcXNQGGFm8KyxrmKHEPbzvaBjulog7w/lLQH3b0tKNk1BR6mPYpqy+uzpEcL85e8Pj8ZPDA2rCqdS5pvnofHqqfWevjMN16ndlGBHwehCkMip7gxIj2qe+/2o7lnitT7sJtv7l5IjmoJy2I2n6eOHgSjSUMAafm9G9eonkg05ls6+7CtyZH3lW5Qrmtkvd1H206cwB4eM3O5Q5zBx089vvMFn0qh7PVnTTG3xRb7AM5vOIlPlRpW6mLw5uuVtZDWuQdzRzuYQ==','222'),
+	(145,'lQcKgUXxuuDSO9H/VCMFZzjf8JoNejtwEpuKaNpS2/zptHuygvnS58nHPZKXgH3gNIM9uEnlL+FlBVViSEeqMr9g4U20qQpC/eZd6p7dZR0DwTwmueQnIo0ucU+kH4mop/JAK80syLcGuVfte9MXrslNqZMNnzDoHZvz+tYTEjDd5OVeSCOYItjaB3tK5+hut6W0MyVtDHgBCdCnTD9OX1GI0YhGNeoe74Ki7zkxwO3Cgi6NLXXmjsQda+SQa2j2YFCAtoIRwi1bGST3uLFT/aUQYWTMpxwsWmUj7hgTbJzLrrOPp5PMetHx2O0f2Y2m+CUi2es3fT1CIsnMqQ2RmQ==','333'),
+	(146,'17ZkwotUhRlnER4oshNOOIzjQ7yZaUm2T5YQsdwtQj2OTh7YlIcv4XCBjchm0coFZqPXsEKCaIQb72TZMKNm+7f7pmw4rnU+x9a4tn1BI+OQ/uZMfSq6WtXOnu7gfCoJLYUTdES0gCJArdyq5zfKhBuTgTkY5zKy3SYfTJ+Jl/SnGLrTtac+T5iKbIsdiepWKKTqxijd9GiWIH/NZR7QGhqAmsaYengTeWP/dZtiZtFUC36E+ldt+tHl6mnDCKUK0WBeXCrR0GLQ07l3bcXJq5kpQiW6wilqdKIMnW2l9VzxBY7Wur/3jP2p8cKxf2ztQ00WZDcPl6g5ZY8FUj6CBA==','444'),
+	(147,'0n17bt+fbqc/F6+6fnnP2mUZGbecoBY7eiAg2xvNO1ItVBmcYl4lY/h9weeMAVRtGlSIZnK6cOEuij5eHwZwpxBnw+/DwqGk9DWRW+lB6+ICkfeduxQ4vgYfjp+hxJB9CLN2sakUgs5j06dgf7UjZmYXwr1V1Tyj/DsDv0JqAa466YqfeaQmh5xTrRb0Bgl9eBXyLwcPADGcE4T7kfVhwUKbiIDfuC84aNS0fyXJboczlVcyuaT7akjZi69ir5dd+sRAmLrKiFww+/ue1fLVz/zQYA1KkHPumy28317pEH0We+q8C45YJps56JPdxBE/S2Z13PZYRF6XRjWRXUShiA==','555'),
+	(148,'nLj0qmNpbdcsV26jeynVo9y1jAayYmbc6E3W1bpWwwjWfFrrC2aJnG9ihMWwv/SEmwDhQqElaIsaJjn4qjtlDo1nc1+xYiid9qGeNIEYHj2vFhATbt2HH8neOUaWWB1zDCaCFfwhzmfU2z+KcLhUWaeYgtOpZM2K1hhkhtRqUXBNV3fuNB9sZF3O414T65cmRD+9QTHlxYe8MTsABs40JFpqWLQd7Jduvf9jWbtVN52bPAx+/cSud5OK/Qp9oA1qcQ+98UyILvyLOS1qwRZYDE35HLOiISjjBOnJAM32p4TkJpzd5jK8aDi2oPy/JoVxgbaCi6xq0PpqTGqoxDbMFw==','666');
+
+/*!40000 ALTER TABLE `pincodes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
