@@ -76,9 +76,9 @@ class Pincode extends CI_Controller {
     public function upload_pincodes()
     {
         $this->load->model('Pincode_model');
-        $data['pincodes'] = $this->Pincode_model->get_pincodes();
+       // $data['pincodes'] = $this->Pincode_model->get_pincodes();
 
-        $this->load->view('upload_pincodes', $data);
+        $this->load->view('upload_pincodes');
     }
 
 
