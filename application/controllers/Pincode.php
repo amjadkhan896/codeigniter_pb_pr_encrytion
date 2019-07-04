@@ -60,7 +60,7 @@ class Pincode extends CI_Controller {
             $page = ($this->uri->segment(3)) ;
         }
         else{
-            $page = 1;
+            $page = 0;
         }
         $data['pincodes'] = $this->Pincode_model->get_pincodes($config["per_page"], $page);
         $str_links = $this->pagination->create_links();

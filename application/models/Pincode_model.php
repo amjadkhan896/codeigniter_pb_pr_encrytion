@@ -16,6 +16,7 @@ class Pincode_model extends CI_Model {
 
         }
         $query = $this->db->get($this->table);
+       // echo $this->db->last_query();exit;
 
         return $query->result();
     }
